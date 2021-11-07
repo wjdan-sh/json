@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE000000"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:persistentDrawingCache="animation"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:text="Date : 2021-09-24"
+        android:textColor="#8D9597"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter EURO value"
+            android:textColor="#8D9597"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/userinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="EURO"
+            android:inputType="number"
+            android:textColor="#8D9597"></EditText>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spr"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="25dp"
+        android:background="#8D9597"
+        android:fadingEdge="horizontal|vertical"
+        android:fadingEdgeLength="10dp"
+        android:popupBackground="#8D9597"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:background="#B9000000"
+        android:backgroundTint="#3E000000"
+        android:text="convert"></Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:text="Result"
+        android:textColor="#8D9597"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
